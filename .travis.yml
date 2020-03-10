@@ -13,8 +13,6 @@ install:
     - npm install -g codecov
 script:
     - npm install
-    - npm test
-    - npm run test:report
 deploy:
     provider: script
     script: netlify deploy -s $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN -p --dir ./build
