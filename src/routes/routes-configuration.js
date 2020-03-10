@@ -3,7 +3,6 @@ import { Route, Redirect } from "react-router-dom";
 import PropTypes from "prop-types";
 import Layouts from "../layouts";
 import Loading from "../components/spinner-loading";
-import { IoMdGift } from "react-icons/io";
 
 const conditionRoute = ({ props, result, authUser, rest, Component }) => {
     const { location } = props;
