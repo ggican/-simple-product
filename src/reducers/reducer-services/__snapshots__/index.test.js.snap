@@ -2,6 +2,10 @@
 
 exports[`Reducer Services Component SUCCESS servicesRedux type 200 function and Snapshot servicesRedux 1`] = `
 Object {
+  "product": Object {
+    "productList": false,
+    "purchase": Array [],
+  },
   "recipes": Object {
     "ingredients": Object {
       "data": Array [
@@ -18,13 +22,23 @@ Object {
       "type": 200,
     },
   },
+  "user": Object {
+    "auth": false,
+  },
 }
 `;
 
 exports[`Reducer Services Component SUCCESS servicesState  Snapshot servicesState 1`] = `
 Object {
+  "product": Object {
+    "productList": false,
+    "purchase": Array [],
+  },
   "recipes": Object {
     "ingredients": false,
+  },
+  "user": Object {
+    "auth": false,
   },
 }
 `;

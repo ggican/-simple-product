@@ -3,6 +3,15 @@ import { servicesRedux, servicesState } from "./reducer-services.redux";
 
 describe("Reducer Services Component", () => {
     const state = servicesState;
+    const result = {
+        user: {
+            auth: false,
+        },
+        product: {
+            productList: false,
+            purchase: [],
+        },
+    };
     beforeEach(() => {});
 
     it("SUCCESS servicesRedux type 200 function and Snapshot servicesRedux", () => {
@@ -41,6 +50,7 @@ describe("Reducer Services Component", () => {
             recipes: {
                 ingredients: actionTest,
             },
+            ...result,
         });
     });
 
@@ -61,6 +71,7 @@ describe("Reducer Services Component", () => {
             recipes: {
                 ingredients: actionTest,
             },
+            ...result,
         });
     });
 
@@ -81,6 +92,7 @@ describe("Reducer Services Component", () => {
             recipes: {
                 ingredients: actionTest,
             },
+            ...result,
         });
     });
 
@@ -101,6 +113,7 @@ describe("Reducer Services Component", () => {
             recipes: {
                 ingredients: actionTest,
             },
+            ...result,
         });
     });
 
@@ -121,6 +134,7 @@ describe("Reducer Services Component", () => {
             recipes: {
                 ingredients: actionTest,
             },
+            ...result,
         });
     });
 
@@ -141,6 +155,7 @@ describe("Reducer Services Component", () => {
             recipes: {
                 ingredients: actionTest,
             },
+            ...result,
         });
     });
 
@@ -161,6 +176,7 @@ describe("Reducer Services Component", () => {
             recipes: {
                 ingredients: actionTest,
             },
+            ...result,
         });
     });
 
@@ -181,6 +197,7 @@ describe("Reducer Services Component", () => {
             recipes: {
                 ingredients: actionTest,
             },
+            ...result,
         });
     });
     it("SUCCESS servicesRedux type CLEAR function servicesRedux", () => {
@@ -195,6 +212,7 @@ describe("Reducer Services Component", () => {
         };
         expect(servicesRedux(state, actionTest)).toEqual({
             recipes: { ingredients: { isDefault: true } },
+            ...result,
         });
     });
     it("SUCCESS servicesRedux type DEFAULT function servicesRedux", () => {
@@ -203,6 +221,7 @@ describe("Reducer Services Component", () => {
         };
         expect(servicesRedux(state, actionTest)).toEqual({
             recipes: { ingredients: false },
+            ...result,
         });
     });
 });
