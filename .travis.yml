@@ -15,7 +15,6 @@ script:
     - npm install
     - npm test
     - npm run test:report
-    - ./node_modules/.bin/codecov --token=$COVERAGE_TOKEN
 deploy:
     provider: script
     script: netlify deploy -s $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN -p --dir ./build
