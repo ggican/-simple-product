@@ -9,11 +9,11 @@ Install application with `npm install`
 ### Story Book
 run story book for view documentation components
 
-![Story Book View](https://i.imgur.com/Wliu3G8.png)
+![Story Book View](https://i.imgur.com/q6V3GSW.png)
 
 #### `npm run storybook`
 run story book for view documentation components with `npm run storybook`
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:6006](http://localhost:3000) to view it in the browser.
 
 ## Available Scripts
 
