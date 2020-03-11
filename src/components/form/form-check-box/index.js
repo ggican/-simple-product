@@ -40,7 +40,7 @@ const FormCheckBox = ({
             onCheckFirstGet();
         }
         return () => {};
-    }, []);
+    }, [isFirstGet]);
 
     const handleOnChange = e => {
         const { target } = e;
