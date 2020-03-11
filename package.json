@@ -39,7 +39,7 @@
         "test:debug": "env-cmd -f ./environments/.env.test react-scripts --inspect-brk test --runInBand --no-cache",
         "test:lint": "eslint --fix src",
         "test:no-watch": "env-cmd -f ./environments/.env.test react-scripts test",
-        "test:report": "npm run test:cov --watchAll=false  && cat ./coverage/lcov.info | codecov",
+        "test:report": "npm run test:cov --watchAll=false  && cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
         "test:snap": "npm run test:no-watch",
         "precommit": "lint-staged",
         "storybook": "start-storybook -p 6006 -c .storybook"
@@ -55,6 +55,7 @@
         "babel-loader": "^8.0.6",
         "babel-plugin-styled-components": "^1.10.7",
         "codecov": "^3.6.5",
+        "coveralls": "^3.0.0",
         "enzyme": "^3.11.0",
         "enzyme-adapter-react-16": "^1.15.2",
         "enzyme-to-json": "^3.4.4",
