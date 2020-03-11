@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4840c3c0-769d-43c6-af2a-4480766c9c60/deploy-status)](https://app.netlify.com/sites/happy-engelbart-98ea7c/deploys) [![Build Status](https://travis-ci.org/ggican/-simple-product.svg?branch=master)](https://travis-ci.org/ggican/-simple-product) [![Coverage Status](https://coveralls.io/repos/github/ggican/-simple-product/badge.svg)](https://coveralls.io/github/ggican/-simple-product) 
+ 
+
 ## Get Started
 
 ### npm install
